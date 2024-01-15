@@ -1,0 +1,76 @@
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+html {
+  height: 99vh;
+  margin: 0;
+}
+
+body {
+  min-height: 99vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e5e5f7;
+  opacity: 0.8;
+  background-image: repeating-radial-gradient(
+      circle at 0 0,
+      transparent 0,
+      #e5e5f7 10px
+    ),
+    repeating-linear-gradient(#74769455, #c0c1df);
+}
+
+.container {
+  background-color: white;
+  border: 3px solid black;
+  border-radius: 8px;
+  box-shadow: 10px 5px 5px gray;
+  width: fit-content;
+  height: fit-content;
+  padding: 2rem;
+  animation: 0.5s ease-in 0.5s transition;
+}
+
+.input-form {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-form > label {
+  margin-bottom: 8px;
+}
+
+#submitbtn {
+  border: none;
+  width: fit-content;
+  margin-top: 16px;
+  background-color: white;
+}
+
+:hover#submitbtn {
+  background-color: whitesmoke;
+  cursor: pointer;
+}
+
+.big-container{
+    background-color: yellow;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding-left: 36rem;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    padding-right: 8rem;
+    
+}
+
+@keyframes transition {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
