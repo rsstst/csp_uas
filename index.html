@@ -15,34 +15,39 @@
   <body>
     <div class="big-container">
       <div class="container">
-        <form class="input-form" action="">
+        <form class="input-form" id="form" action="">
           <label for="usn">Username</label>
           <input type="text" name="usn" id="usn" />
-
-          <label for="email">Email</label>
-          <input type="text" name="email" id="email" />
 
           <label for="psw">Password</label>
           <input type="password" name="psw" id="psw" />
 
-          <input onclick='submit()' type="submit" name="submitbtn" id="submitbtn" />
+          <button type="submit" id="submitbtn">Submit</button>
         </form>
       </div>
     </div>
-
-    <script>
-      function submit(){
-        x = document.getElementById('usn');
-
-        if (x.equals('user')){
-          window.location.href = 'dashboard_user.html'
-        } else if (x.equals('admin')){
-          window.location.href = 'dashboard_admin.html'
-        } else {
-          alert('User tidak terdaftar')
-        }
-      }
-    </script>
-
   </body>
+
+  <script>
+    document.getElementById("form").addEventListener("submit", auth);
+    function auth(event) {
+      event.preventDefault();
+
+      var username = document.getElementById("usn").value;
+      var password = document.getElementById("psw").value;
+      console.log(username);
+
+      if (username === "admin" && password === "admin") {
+        window.location.replace("dashboard_admin.html");
+      } else if (username === "user" && password === "user") {
+        window.location.replace("dashboard_user.html");
+      } else if (username === "" && password === "") {
+        alert("Masukkan informasi dengan benar");
+      } else {
+        alert("User tidak terdaftar");
+        return;
+      }
+    }
+  </script>
+  
 </html>
