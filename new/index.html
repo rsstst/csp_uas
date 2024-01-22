@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vtube</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="animation-lib.css" />
+  </head>
+  <body>
+      <div class="option">
+        <button id="jp" class="opt-btn" onclick="jpChangeColor()">
+          Japanese
+        </button>
+        <button id="kr" class="opt-btn" onclick="krChangeColor()">Korea</button>
+      </div>
+
+      <div class="container">
+        <div id="jpcont" class="jp-container">
+          <div id="box1">
+            <div
+              onclick="window.location='char/suisei.html'"
+              id="hoshimachi"
+              class="img-box"
+              style="background-image: url(img/hoshimachi_suisei.jpg)"
+            ></div>
+            <p>Hoshimachi Suisei</p>
+          </div>
+
+          <div id="box2">
+            <div
+            onclick="window.location='char/azki.html'"
+              id="azki"
+              class="img-box"
+              style="
+                background-image: url(img/azki.jpg);
+                background-position: 0% 20%;
+              "
+            ></div>
+            <p>AZKi</p>
+          </div>
+
+          <div id="box3">
+            <div
+            onclick="window.location='char/irys.html'"
+              id="irys"
+              class="img-box"
+              style="
+                background-image: url(img/irys.jpg);
+                background-position: 0% 50%;
+              "
+            ></div>
+            <p>IRyS</p>
+          </div>
+        </div>
+        <div id="krcont" class="kr-container">
+          <div id="box4">
+            <div
+            onclick="window.location='char/jungkook.html'"
+              class="img-box"
+              style="background-image: url(img/jungkook.jpeg)"
+            ></div>
+            <p>Jungkook</p>
+          </div>
+
+          <div id="box5">
+            <div
+            onclick="window.location='char/songkang.html'"
+              class="img-box"
+              style="background-image: url(img/songkang.jpeg)"
+            ></div>
+            <p>Songkang</p>
+          </div>
+
+          <div id="box6">
+            <div
+            onclick="window.location='char/taehyung.html'"
+              class="img-box"
+              style="
+                background-image: url(img/taehyung.jpeg);
+                background-position: 0% 50%;
+              "
+            ></div>
+            <p>Taehyung</p>
+          </div>
+        </div>
+        <button
+          class="opt-btn"
+          style="width: 150px; position: absolute; right: 0; bottom: 0"
+          onclick="window.location.reload()"
+        >
+          Kembali
+        </button>
+      </div>
+  </body>
+  <script src="index.js"></script>
+</html>

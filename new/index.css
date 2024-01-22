@@ -1,0 +1,88 @@
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+body{
+    background-image: url(img/css-pattern.png);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.option {
+  background-color: white;
+}
+
+.jp-container {
+  display: none;
+}
+
+.kr-container {
+  display: none;
+}
+
+.option {
+  gap: 20px;
+  display: flex;
+  justify-content: center;
+  font-size: large;
+  border: 1px solid black;
+  padding: 12px;
+  margin-bottom: 1rem;
+}
+
+.opt-btn {
+  border: 1px solid black;
+  padding: 8px;
+  border-radius: 8px;
+  color: black;
+  text-decoration: none;
+  background-color: white;
+}
+
+.opt-btn:hover {
+  cursor: pointer;
+}
+
+#box1,
+#box2,
+#box3,
+#box4,
+#box5,
+#box6 {
+  text-align: center;
+  padding: 8px;
+  margin: auto;
+}
+
+.img-box {
+  overflow: hidden;
+  object-fit: cover;
+  cursor: pointer;
+  border: 1px solid red;
+  padding: 3px;
+  width: 350px;
+  height: 350px;
+  background-size: cover;
+}
+
+img {
+  width: 350px;
+  height: 350px;
+}
+
+.divShow {
+  animation: show 1s linear;
+}
+
+@keyframes show {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
